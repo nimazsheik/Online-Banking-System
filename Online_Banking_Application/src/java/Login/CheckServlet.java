@@ -78,8 +78,15 @@ public class CheckServlet extends HttpServlet {
         String account = request.getParameter("acc_name");
         String password = request.getParameter("acc_pass");
         
-        User u = new User(); //create a User class
-        u.checkUserLogin(account,password);
+        Customer customer = new Customer(); //create a User class
+      int uid =  customer.checkUserLogin(account,password);
+      
+      //if the user exists create a session
+      if(uid==-1){
+          response.sendRedirect("fail.jsp");
+      }else{
+          response.sendRedirect("account.jsp");
+      }
     }
 
     /**

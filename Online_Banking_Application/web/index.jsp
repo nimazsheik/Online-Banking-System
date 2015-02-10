@@ -15,7 +15,7 @@
         <h1>Hello World!</h1>
         
         <table border="0">
-            <form action ="#" method ="POST">
+            <form action ="CheckServlet" method ="POST">
             <tbody>
                 <tr>
                     <td>Account</td>
