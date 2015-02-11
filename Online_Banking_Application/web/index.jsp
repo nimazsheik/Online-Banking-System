@@ -9,9 +9,19 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href ="css/style_home.css" type="text/css" rel="stylesheet"/>
         <title>Login Page</title>
+        
+        <script src = "js/respond.js"></script>
+        
     </head>
     <body>
+        
+         <!---javascript--->
+        
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src = "js/bootstrap.min.js"></script>
+        
         <h1>Hello World!</h1>
         
         <table border="0">
