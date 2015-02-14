@@ -11,3 +11,8 @@ and open the template in the editor.
 h1{
     color: red;
 }
+
+
+ul.nav.navbar-nav.pull-right>li>a:hover {
+   color:greenyellow;
+}
