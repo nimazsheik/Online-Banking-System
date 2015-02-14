@@ -80,12 +80,12 @@ public class LoginServlet extends HttpServlet {
         String uname = request.getParameter("acc_name");
         String password = request.getParameter("acc_pass");
         
-        User customer = new User(); //create a User class
+        //User customer = new User(); //create a User class
         User u = new User();
         u.setUserName(uname);
         u.setPassword(password);
         
-        u = UserController.checkUserLogin(u);
+        u = User.checkUserLogin(u);
     //  int uid =  customer.checkUserLogin(uname,password);
       
       //if the user exists create a session
