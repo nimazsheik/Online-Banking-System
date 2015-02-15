@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import model.User;
+import model.Customer;
 
 /**
  *
@@ -81,11 +81,11 @@ public class LoginServlet extends HttpServlet {
         String password = request.getParameter("acc_pass");
         
         //User customer = new User(); //create a User class
-        User u = new User();
+        Customer u = new Customer();
         u.setUserName(uname);
         u.setPassword(password);
         
-        u = User.checkUserLogin(u);
+        u = Customer.checkUserLogin(u);
     //  int uid =  customer.checkUserLogin(uname,password);
       
       //if the user exists create a session
