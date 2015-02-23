@@ -49,7 +49,7 @@
                         <li><a href="#">Payments</a></li>
                         <li><a href="#">Transfers</a></li>
                         <li><a href="#">Profile</a></li>
-                        <li><a href="Logout">Logout</a></li>    <!---open logout servlet--->        
+                        <li><a href="LogoutServlet">Logout</a></li>    <!---open logout servlet--->        
                     </ul>
                 
 
