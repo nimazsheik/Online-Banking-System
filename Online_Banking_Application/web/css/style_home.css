@@ -16,3 +16,14 @@ h1{
 ul.nav.navbar-nav.pull-right>li>a:hover {
    color:greenyellow;
 }
+/*adjust the size of sign in form*/
+.form-signin{
+    width: 275px;
+    max-width: 275px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#h3marg{
+    margin-top: 0px;
+}

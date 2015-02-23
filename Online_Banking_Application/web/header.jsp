@@ -15,7 +15,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href ="css/style_home.css" type="text/css" rel="stylesheet"/>
         
-        <title>Online Bank</title>
+        
         
         <script src = "js/respond.js"></script>
         
@@ -30,24 +30,31 @@
         <script src = "js/bootstrap.min.js"></script>
      
         <div class ="row">
-            <div class ="navbar navbar-inverse">
+            <div class ="navbar navbar-default navbar-inverse" role="navigation">
                     <div class="col-md-6 col-xs-6">
                         <img src="" height="170px" width="170px">
                     </div>
-            <div class="col-md-6 col-xs-6">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>  
+                </div>
                 
-                
+            <div class="collapse navbar-collapse" id="collapse">
                     <ul class="nav navbar-nav pull-right" style = "margin-top: 100px;">
                         <li><a href="#" >Accounts</a></li>
                         <li><a href="#">Payments</a></li>
                         <li><a href="#">Transfers</a></li>
                         <li><a href="#">Profile</a></li>
-                        <li><a href="#">Logout</a></li>            
+                        <li><a href="Logout">Logout</a></li>    <!---open logout servlet--->        
                     </ul>
                 
 
-                </div><!--- close navbar--->
-            </div><!---close span12--->
+                </div><!--- close collapse--->
+            </div><!---close navbar--->
             
         </div><!---close row--->
         

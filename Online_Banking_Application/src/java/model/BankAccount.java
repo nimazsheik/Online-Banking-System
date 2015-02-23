@@ -12,10 +12,25 @@ import java.sql.Date;
  *
  * @author Nimaz
  */
-public class BankAccount {
+public abstract class BankAccount {
     String accountNumber;
     Date accountOpenDate;
-    float accountBalance;
+    double accountBalance;
     
     //method depositAmount, withdrawAmount, accbalance
+    public void deposit(double amount){
+        accountBalance = accountBalance + amount;
+    }
+    
+    public void withdraw(double amount){
+        accountBalance = accountBalance - amount;
+    }
+    
+    public double getBalance(){
+        return accountBalance;
+    }
+    
+    public void transfer(double amount, String accountNumberTo){
+        
+    }
 }

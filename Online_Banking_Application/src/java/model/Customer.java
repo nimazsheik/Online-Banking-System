@@ -97,19 +97,11 @@ public class Customer {
         this.password = password;
     }
     
-    
-    //this method is to login to the website if its a valid user
 
-    /**
-     * @return the valid
-     */
     public boolean isValid() {
         return valid;
     }
 
-    /**
-     * @param valid the valid to set
-     */
     public void setValid(boolean valid) {
         this.valid = valid;
     }
@@ -120,10 +112,7 @@ public static Customer checkUserLogin(Customer user){
             ResultSet rs = null;
            // User user = new User();
           try {    
-            //setUserName ( uname);
-           // setPassword ( pwd);
-            
-         //   String checkQuery = "SELECT * FROM users WHERE user_name = '"+getUserName()+"' AND password = '"+getPassword() +"'";
+
             String checkQuery = "SELECT * FROM users WHERE user_name = ? AND password = ?";
             // now check the database if user exists, if exists return his id number
             DatabaseConnection databaseConnect = new DatabaseConnection();

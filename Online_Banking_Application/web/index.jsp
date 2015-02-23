@@ -12,48 +12,34 @@
         
         <!---including the header--->
         <jsp:include page="header.jsp"/>
+        
+        
         <title>Login Page</title>
-        
-        
-        
     </head>
+    
     <body>
         
-         <!---javascript--->
-        
-	
-        
-        
-        
-        
-
-        
-        
-        
-        
-        
-        
-        <h1>Hello World!</h1>
-        
-        <table border="0">
-            <form action ="CheckServlet" method ="POST">
-            <tbody>
-                <tr>
-                    <td>Account</td>
-                    <td><input type = "text" name="acc_name"/></td>
-                </tr>
-                <tr>
-                    <td>Password</td>
-                    <td><input type ="password" name = "acc_pass"/></td>
-                </tr>
-                <tr>
-                    <td><input type="submit" value="Submit"/></td>
-                    <td><input type="reset" value="Cancel"/></td>
-                </tr>
-            </tbody>
+        <div class="container">
+            <form class="form-signin"  action ="CheckServlet" method ="POST">
+                <h2 class="form-signin-header">Please sign in</h2>
+                <label for="inputUser" class="sr-only">Username</label>
+                <input type="text" id="inputUser" name="acc_name" class="form-control" placeholder="Username" required autofocus>
+                
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" name="acc_pass" class="form-control" placeholder="Password" required>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me">Remember Me
+                    </label>
+                </div>
+                <button class="btn btn-md btn-primary btn-success" type="submit"/>Sign in</button>
+                <button class="btn btn-md btn-warning" type="reset"/>Cancel</button>
+ 
+                
             </form>
-        </table>
-
-
+            
+            
+        </div>
+        
     </body>
 </html>
