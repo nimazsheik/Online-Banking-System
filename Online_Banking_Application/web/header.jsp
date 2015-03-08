@@ -29,10 +29,32 @@
        
         <script src = "js/bootstrap.min.js"></script>
      
-        <div class ="row">
+        
+        <% 
+            if(session.getAttribute("currentSessionUser")==null){
+        %>
+            
+            <div class ="row">
+            <div class ="navbar navbar-default navbar-inverse" role="navigation">
+            <div class="collapse navbar-collapse" id="collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a href="#" >New to Cyber Banking? Sign up for an account now!!</a></li>      
+                    </ul>
+                </div>
+            </div>
+            </div>
+                
+        <%}
+            else{
+            
+        
+        %>
+        
+        
+        
             <div class ="navbar navbar-default navbar-inverse" role="navigation">
                     <div class="col-md-6 col-xs-6">
-                        <img src="" height="170px" width="170px">
+                        <img src="" height="65px" width="170px">
                     </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
@@ -51,15 +73,13 @@
                         <li><a href="#">Profile</a></li>
                         <li><a href="LogoutServlet">Logout</a></li>    <!---open logout servlet--->        
                     </ul>
-                
-
                 </div><!--- close collapse--->
             </div><!---close navbar--->
             
-        </div><!---close row--->
         
         
         
+        <%}%>
        
     </body>
 </html>

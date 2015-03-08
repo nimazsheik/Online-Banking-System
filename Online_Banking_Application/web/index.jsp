@@ -38,8 +38,10 @@
                 
             </form>
             
+            <br/>
+             <jsp:include page="footer.jsp"/>
             
-        </div>
+        </div><!---end container--->
         
     </body>
 </html>

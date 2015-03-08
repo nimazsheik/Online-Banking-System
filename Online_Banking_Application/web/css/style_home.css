@@ -8,6 +8,15 @@ and open the template in the editor.
     Author     : Nimaz
 */
 
+body{
+    background-color: #ddd;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+
 h1{
     color: red;
 }
@@ -24,6 +33,33 @@ ul.nav.navbar-nav.pull-right>li>a:hover {
     padding: 10px;
 }
 
-#h3marg{
-    margin-top: 0px;
+.panelDesign{         /*-------picture links----*/
+	margin:80px 20px 50px 80px;
+	padding:40px;
+	border:6px solid #484EA8;
+	text-align:center;
+	float:left;
+	background-color:greenyellow;
+	-moz-border-radius:8px;
+        -webkit-border-radius:8px;
+        
+}
+
+.container{
+    background-color: white;
+    position: relative;
+    width:85%;
+    
+}
+#sumPanel{
+    background-color: khaki;
+    padding: 15px;
+    border: 1px black solid;
+    margin-top: 20px;
+    height: 80px;
+}
+
+/*remove list style for bullet points*/
+.footer li{
+    list-style-type: none;
 }
