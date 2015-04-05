@@ -90,7 +90,7 @@
             </article>
             
             
-        </div><!---end container--->
+        </div>
         <%}%>
        
     </body>
